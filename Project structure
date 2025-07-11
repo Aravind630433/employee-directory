@@ -1,0 +1,16 @@
+employee-directory/
+├── index.html
+├── form.html
+├── css/
+│ └── styles.css
+├── js/
+│ ├── main.js
+│ └── form.js
+├── data/
+│ └── employees.json (optional)
+├── screenshots/
+│ └── screenshot-dashboard-light.png
+│ └── screenshot-dashboard-dark.png
+│ └── screenshot-form.png
+│ └── screenshot-mobile.png
+├── README.md
