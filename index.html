@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Employee Directory</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <button id="theme-toggle">Toggle Theme</button>
+
+  <h1>Employee Directory</h1>
+
+  <div class="controls">
+    <input type="text" id="search" placeholder="Search by name or email" />
+
+    <select id="sort">
+      <option value="">Sort By</option>
+      <option value="firstName">First Name</option>
+      <option value="department">Department</option>
+    </select>
+
+    <select id="filter-department">
+      <option value="">Filter by Department</option>
+    </select>
+
+    <select id="filter-role">
+      <option value="">Filter by Role</option>
+    </select>
+
+    <select id="pagination-limit">
+      <option value="10">Show 10</option>
+      <option value="25">Show 25</option>
+      <option value="50">Show 50</option>
+      <option value="100">Show 100</option>
+    </select>
+
+    <button onclick="openForm()">Add Employee</button>
+  </div>
+
+  <div id="employee-list"></div>
+  <div id="pagination-controls"></div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

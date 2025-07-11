@@ -1,0 +1,160 @@
+:root {
+  --bg-color: #f4f4f4;
+  --text-color: #222;
+  --card-bg: #fff;
+  --button-bg: #007bff;
+  --button-hover: #0056b3;
+  --form-bg: #fff;
+}
+
+body.dark {
+  --bg-color: #121212;
+  --text-color: #eee;
+  --card-bg: #1e1e1e;
+  --button-bg: #4f8cff;
+  --button-hover: #3a6ac6;
+  --form-bg: #1e1e1e;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  margin: 0;
+}
+
+h1, h2 {
+  text-align: center;
+}
+
+input, button {
+  padding: 10px;
+  margin: 6px;
+  font-size: 16px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+button {
+  cursor: pointer;
+  background-color: var(--button-bg);
+  color: white;
+  border: none;
+}
+
+button:hover {
+  background-color: var(--button-hover);
+}
+
+#theme-toggle {
+  position: fixed;
+  top: 15px;
+  right: 20px;
+  padding: 8px 12px;
+  font-size: 14px;
+  border-radius: 4px;
+}
+
+#employee-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 20px;
+}
+
+.employee-card {
+  background-color: var(--card-bg);
+  padding: 15px;
+  border-radius: 6px;
+  width: 300px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.employee-card p {
+  margin: 6px 0;
+}
+
+form {
+  max-width: 500px;
+  margin: auto;
+  padding: 20px;
+  background-color: var(--form-bg);
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+form input {
+  width: 100%;
+  margin-bottom: 12px;
+}
+
+form button {
+  width: 100%;
+  background-color: #28a745;
+}
+
+form button:hover {
+  background-color: #218838;
+}
+
+#search {
+  width: 300px;
+  max-width: 90%;
+  display: block;
+  margin: 0 auto 20px;
+}
+
+@media (max-width: 768px) {
+  #employee-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .employee-card {
+    width: 90%;
+  }
+
+  #search {
+    width: 90%;
+  }
+
+  button {
+    font-size: 14px;
+  }
+}
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+select {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+#pagination-controls {
+  text-align: center;
+  margin-top: 20px;
+}
+
+#pagination-controls button {
+  margin: 4px;
+  padding: 6px 12px;
+  background-color: var(--button-bg);
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#pagination-controls button.active {
+  font-weight: bold;
+  background-color: var(--button-hover);
+}
